@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		290FAC9025B70B020022B7BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAC8F25B70B020022B7BB /* AppDelegate.swift */; };
 		290FAC9225B70B020022B7BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAC9125B70B020022B7BB /* SceneDelegate.swift */; };
-		290FAC9425B70B020022B7BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAC9325B70B020022B7BB /* ViewController.swift */; };
 		290FAC9725B70B020022B7BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290FAC9525B70B020022B7BB /* Main.storyboard */; };
 		290FAC9925B70B040022B7BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290FAC9825B70B040022B7BB /* Assets.xcassets */; };
 		290FAC9C25B70B040022B7BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290FAC9A25B70B040022B7BB /* LaunchScreen.storyboard */; };
+		290FACF625B753050022B7BB /* UIStoryboard+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FACF525B753050022B7BB /* UIStoryboard+Storyboards.swift */; };
+		290FACFA25B754420022B7BB /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FACF925B754420022B7BB /* BaseCoordinator.swift */; };
+		290FAD0025B756250022B7BB /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FACFF25B756250022B7BB /* CurrencyViewController.swift */; };
+		290FAD0525B756970022B7BB /* CurrencyExchangeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAD0325B756970022B7BB /* CurrencyExchangeTableViewCell.swift */; };
+		290FAD0625B756970022B7BB /* CurrencyExchangeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290FAD0425B756970022B7BB /* CurrencyExchangeTableViewCell.xib */; };
+		290FAD0D25B756ED0022B7BB /* CurrencyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAD0C25B756ED0022B7BB /* CurrencyCellViewModel.swift */; };
+		290FAD1325B87A950022B7BB /* CurrenciesListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAD1225B87A950022B7BB /* CurrenciesListModel.swift */; };
+		290FAD1625B87AD10022B7BB /* ExchangeRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAD1525B87AD10022B7BB /* ExchangeRateModel.swift */; };
+		290FAD1A25B87DF00022B7BB /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAD1925B87DF00022B7BB /* CurrencyViewModel.swift */; };
+		290FAD1E25B87E420022B7BB /* Currency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290FAD1D25B87E420022B7BB /* Currency.storyboard */; };
+		9A7932A7DFC41B33EF2F28CF /* Pods_PayPaliOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C833AE842BB3AEE841898553 /* Pods_PayPaliOSTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		290FAC8C25B70B020022B7BB /* PayPaliOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayPaliOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		290FAC8F25B70B020022B7BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		290FAC9125B70B020022B7BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		290FAC9325B70B020022B7BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		290FAC9625B70B020022B7BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		290FAC9825B70B040022B7BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290FAC9B25B70B040022B7BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		290FAC9D25B70B040022B7BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		290FACF525B753050022B7BB /* UIStoryboard+Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Storyboards.swift"; sourceTree = "<group>"; };
+		290FACF925B754420022B7BB /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		290FACFF25B756250022B7BB /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
+		290FAD0325B756970022B7BB /* CurrencyExchangeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeTableViewCell.swift; sourceTree = "<group>"; };
+		290FAD0425B756970022B7BB /* CurrencyExchangeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyExchangeTableViewCell.xib; sourceTree = "<group>"; };
+		290FAD0C25B756ED0022B7BB /* CurrencyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellViewModel.swift; sourceTree = "<group>"; };
+		290FAD1225B87A950022B7BB /* CurrenciesListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesListModel.swift; sourceTree = "<group>"; };
+		290FAD1525B87AD10022B7BB /* ExchangeRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateModel.swift; sourceTree = "<group>"; };
+		290FAD1925B87DF00022B7BB /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		290FAD1D25B87E420022B7BB /* Currency.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Currency.storyboard; sourceTree = "<group>"; };
+		B5A3C6763D4D6F1F37DB0702 /* Pods-PayPaliOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayPaliOSTest.debug.xcconfig"; path = "Target Support Files/Pods-PayPaliOSTest/Pods-PayPaliOSTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C79E51344BB3752C5A8F2EFE /* Pods-PayPaliOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayPaliOSTest.release.xcconfig"; path = "Target Support Files/Pods-PayPaliOSTest/Pods-PayPaliOSTest.release.xcconfig"; sourceTree = "<group>"; };
+		C833AE842BB3AEE841898553 /* Pods_PayPaliOSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayPaliOSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7932A7DFC41B33EF2F28CF /* Pods_PayPaliOSTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,8 @@
 			children = (
 				290FAC8E25B70B020022B7BB /* PayPaliOSTest */,
 				290FAC8D25B70B020022B7BB /* Products */,
+				411AEC7533F553A5F9BF9CE2 /* Pods */,
+				61D13B2145E25467671DFDDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,162 @@
 		290FAC8E25B70B020022B7BB /* PayPaliOSTest */ = {
 			isa = PBXGroup;
 			children = (
-				290FAC8F25B70B020022B7BB /* AppDelegate.swift */,
-				290FAC9125B70B020022B7BB /* SceneDelegate.swift */,
-				290FAC9325B70B020022B7BB /* ViewController.swift */,
+				290FACA825B74FB20022B7BB /* Common */,
+				290FACA725B74FA90022B7BB /* Resource */,
+				290FACA625B74FA10022B7BB /* Feature */,
+				290FACA425B74DD30022B7BB /* ApplicationSetup */,
 				290FAC9525B70B020022B7BB /* Main.storyboard */,
 				290FAC9825B70B040022B7BB /* Assets.xcassets */,
 				290FAC9A25B70B040022B7BB /* LaunchScreen.storyboard */,
 				290FAC9D25B70B040022B7BB /* Info.plist */,
 			);
 			path = PayPaliOSTest;
+			sourceTree = "<group>";
+		};
+		290FACA425B74DD30022B7BB /* ApplicationSetup */ = {
+			isa = PBXGroup;
+			children = (
+				290FAC8F25B70B020022B7BB /* AppDelegate.swift */,
+				290FAC9125B70B020022B7BB /* SceneDelegate.swift */,
+			);
+			path = ApplicationSetup;
+			sourceTree = "<group>";
+		};
+		290FACA625B74FA10022B7BB /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				290FACFC25B755E80022B7BB /* Scenes */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		290FACA725B74FA90022B7BB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		290FACA825B74FB20022B7BB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				290FACAA25B750630022B7BB /* Coordinator */,
+				290FACA925B7505B0022B7BB /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		290FACA925B7505B0022B7BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				290FACF525B753050022B7BB /* UIStoryboard+Storyboards.swift */,
+				290FACF925B754420022B7BB /* BaseCoordinator.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		290FACAA25B750630022B7BB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		290FACFC25B755E80022B7BB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				290FAD1C25B87E2A0022B7BB /* StoryBoard */,
+				290FAD1825B87DAA0022B7BB /* ViewModels */,
+				290FAD0825B756BD0022B7BB /* Models */,
+				290FACFE25B7560B0022B7BB /* ViewControllers */,
+				290FACFD25B755FC0022B7BB /* Views */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		290FACFD25B755FC0022B7BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				290FAD0325B756970022B7BB /* CurrencyExchangeTableViewCell.swift */,
+				290FAD0425B756970022B7BB /* CurrencyExchangeTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		290FACFE25B7560B0022B7BB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				290FACFF25B756250022B7BB /* CurrencyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		290FAD0825B756BD0022B7BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				290FAD0B25B756D40022B7BB /* ViewModel */,
+				290FAD0A25B756CB0022B7BB /* RequestModel */,
+				290FAD0925B756C40022B7BB /* ResponseModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		290FAD0925B756C40022B7BB /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				290FAD1225B87A950022B7BB /* CurrenciesListModel.swift */,
+				290FAD1525B87AD10022B7BB /* ExchangeRateModel.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		290FAD0A25B756CB0022B7BB /* RequestModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
+		290FAD0B25B756D40022B7BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				290FAD0C25B756ED0022B7BB /* CurrencyCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		290FAD1825B87DAA0022B7BB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				290FAD1925B87DF00022B7BB /* CurrencyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		290FAD1C25B87E2A0022B7BB /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				290FAD1D25B87E420022B7BB /* Currency.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		411AEC7533F553A5F9BF9CE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3C6763D4D6F1F37DB0702 /* Pods-PayPaliOSTest.debug.xcconfig */,
+				C79E51344BB3752C5A8F2EFE /* Pods-PayPaliOSTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		61D13B2145E25467671DFDDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C833AE842BB3AEE841898553 /* Pods_PayPaliOSTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 290FACA025B70B040022B7BB /* Build configuration list for PBXNativeTarget "PayPaliOSTest" */;
 			buildPhases = (
+				BFCE18435079A76DFD0FFE09 /* [CP] Check Pods Manifest.lock */,
 				290FAC8825B70B020022B7BB /* Sources */,
 				290FAC8925B70B020022B7BB /* Frameworks */,
 				290FAC8A25B70B020022B7BB /* Resources */,
+				0B98517F7AB579FD527CBE30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				290FAC9C25B70B040022B7BB /* LaunchScreen.storyboard in Resources */,
+				290FAD0625B756970022B7BB /* CurrencyExchangeTableViewCell.xib in Resources */,
+				290FAD1E25B87E420022B7BB /* Currency.storyboard in Resources */,
 				290FAC9925B70B040022B7BB /* Assets.xcassets in Resources */,
 				290FAC9725B70B020022B7BB /* Main.storyboard in Resources */,
 			);
@@ -132,14 +308,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B98517F7AB579FD527CBE30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayPaliOSTest/Pods-PayPaliOSTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayPaliOSTest/Pods-PayPaliOSTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayPaliOSTest/Pods-PayPaliOSTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFCE18435079A76DFD0FFE09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PayPaliOSTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		290FAC8825B70B020022B7BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290FAC9425B70B020022B7BB /* ViewController.swift in Sources */,
+				290FAD0D25B756ED0022B7BB /* CurrencyCellViewModel.swift in Sources */,
+				290FAD1A25B87DF00022B7BB /* CurrencyViewModel.swift in Sources */,
+				290FAD0525B756970022B7BB /* CurrencyExchangeTableViewCell.swift in Sources */,
 				290FAC9025B70B020022B7BB /* AppDelegate.swift in Sources */,
 				290FAC9225B70B020022B7BB /* SceneDelegate.swift in Sources */,
+				290FAD1325B87A950022B7BB /* CurrenciesListModel.swift in Sources */,
+				290FACF625B753050022B7BB /* UIStoryboard+Storyboards.swift in Sources */,
+				290FACFA25B754420022B7BB /* BaseCoordinator.swift in Sources */,
+				290FAD0025B756250022B7BB /* CurrencyViewController.swift in Sources */,
+				290FAD1625B87AD10022B7BB /* ExchangeRateModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +508,7 @@
 		};
 		290FACA125B70B040022B7BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A3C6763D4D6F1F37DB0702 /* Pods-PayPaliOSTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +528,7 @@
 		};
 		290FACA225B70B040022B7BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C79E51344BB3752C5A8F2EFE /* Pods-PayPaliOSTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
