@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 final class CurrencyViewController: UIViewController {
     
     // MARK:- Private Properties
@@ -32,7 +31,7 @@ final class CurrencyViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         bind()
-        viewModel.viewDidLoad()
+        //viewModel.viewDidLoad()
     }
     
     // MARK:- Private Methods
@@ -61,32 +60,3 @@ final class CurrencyViewController: UIViewController {
 //        }
 //    }
 }
-
-// MARK:- Extension
-
-fileprivate extension CurrencyViewController {
-    enum Section: CaseIterable {
-        case Vehicles
-    }
-    
-//    private func createDataSource() -> UITableViewDiffableDataSource<Section, CurrencyCellViewModel> {
-//        return UITableViewDiffableDataSource(
-//            tableView: tableView,
-//            cellProvider: {  tableView, indexPath, vehiclesCellViewModel in
-//                let cell: VehiclesListTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-//                cell.configure(with: vehiclesCellViewModel)
-//                return cell
-//            })
-//    }
-    
-    private func updateTable(with vehicles: [CurrencyCellViewModel], animate: Bool = true) {
-        DispatchQueue.main.async {
-            var snapshot = NSDiffableDataSourceSnapshot<Section, CurrencyCellViewModel>()
-            snapshot.appendSections(Section.allCases)
-            snapshot.appendItems(vehicles, toSection: .Vehicles)
-            self.dataSource.apply(snapshot, animatingDifferences: animate)
-            
-        }
-    }
-}
-

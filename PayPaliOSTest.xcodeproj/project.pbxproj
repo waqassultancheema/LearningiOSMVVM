@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,8 @@
 		290FAD1625B87AD10022B7BB /* ExchangeRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAD1525B87AD10022B7BB /* ExchangeRateModel.swift */; };
 		290FAD1A25B87DF00022B7BB /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAD1925B87DF00022B7BB /* CurrencyViewModel.swift */; };
 		290FAD1E25B87E420022B7BB /* Currency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290FAD1D25B87E420022B7BB /* Currency.storyboard */; };
+		290FAD2625B87FF30022B7BB /* ExchangeRateDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FAD2525B87FF30022B7BB /* ExchangeRateDatasource.swift */; };
+		29F939E025C6D9ED00387BD4 /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 29F939DF25C6D9ED00387BD4 /* NetworkLayer */; };
 		9A7932A7DFC41B33EF2F28CF /* Pods_PayPaliOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C833AE842BB3AEE841898553 /* Pods_PayPaliOSTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,7 @@
 		290FAD1525B87AD10022B7BB /* ExchangeRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateModel.swift; sourceTree = "<group>"; };
 		290FAD1925B87DF00022B7BB /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		290FAD1D25B87E420022B7BB /* Currency.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Currency.storyboard; sourceTree = "<group>"; };
+		290FAD2525B87FF30022B7BB /* ExchangeRateDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateDatasource.swift; sourceTree = "<group>"; };
 		B5A3C6763D4D6F1F37DB0702 /* Pods-PayPaliOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayPaliOSTest.debug.xcconfig"; path = "Target Support Files/Pods-PayPaliOSTest/Pods-PayPaliOSTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C79E51344BB3752C5A8F2EFE /* Pods-PayPaliOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayPaliOSTest.release.xcconfig"; path = "Target Support Files/Pods-PayPaliOSTest/Pods-PayPaliOSTest.release.xcconfig"; sourceTree = "<group>"; };
 		C833AE842BB3AEE841898553 /* Pods_PayPaliOSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayPaliOSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A7932A7DFC41B33EF2F28CF /* Pods_PayPaliOSTest.framework in Frameworks */,
+				29F939E025C6D9ED00387BD4 /* NetworkLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +149,7 @@
 		290FACFC25B755E80022B7BB /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				290FAD2925B8800B0022B7BB /* Repository */,
 				290FAD1C25B87E2A0022B7BB /* StoryBoard */,
 				290FAD1825B87DAA0022B7BB /* ViewModels */,
 				290FAD0825B756BD0022B7BB /* Models */,
@@ -167,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				290FACFF25B756250022B7BB /* CurrencyViewController.swift */,
+				290FAD2425B87FCF0022B7BB /* DataSource */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,13 +227,27 @@
 			path = StoryBoard;
 			sourceTree = "<group>";
 		};
+		290FAD2425B87FCF0022B7BB /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				290FAD2525B87FF30022B7BB /* ExchangeRateDatasource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		290FAD2925B8800B0022B7BB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		411AEC7533F553A5F9BF9CE2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				B5A3C6763D4D6F1F37DB0702 /* Pods-PayPaliOSTest.debug.xcconfig */,
 				C79E51344BB3752C5A8F2EFE /* Pods-PayPaliOSTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -257,6 +277,9 @@
 			dependencies = (
 			);
 			name = PayPaliOSTest;
+			packageProductDependencies = (
+				29F939DF25C6D9ED00387BD4 /* NetworkLayer */,
+			);
 			productName = PayPaliOSTest;
 			productReference = 290FAC8C25B70B020022B7BB /* PayPaliOSTest.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +307,9 @@
 				Base,
 			);
 			mainGroup = 290FAC8325B70B020022B7BB;
+			packageReferences = (
+				29F939DE25C6D9ED00387BD4 /* XCRemoteSwiftPackageReference "NetworkLayer" */,
+			);
 			productRefGroup = 290FAC8D25B70B020022B7BB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -362,6 +388,7 @@
 				290FAC9225B70B020022B7BB /* SceneDelegate.swift in Sources */,
 				290FAD1325B87A950022B7BB /* CurrenciesListModel.swift in Sources */,
 				290FACF625B753050022B7BB /* UIStoryboard+Storyboards.swift in Sources */,
+				290FAD2625B87FF30022B7BB /* ExchangeRateDatasource.swift in Sources */,
 				290FACFA25B754420022B7BB /* BaseCoordinator.swift in Sources */,
 				290FAD0025B756250022B7BB /* CurrencyViewController.swift in Sources */,
 				290FAD1625B87AD10022B7BB /* ExchangeRateModel.swift in Sources */,
@@ -568,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29F939DE25C6D9ED00387BD4 /* XCRemoteSwiftPackageReference "NetworkLayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/waqassultancheema/NetworkLayer";
+			requirement = {
+				branch = feature;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29F939DF25C6D9ED00387BD4 /* NetworkLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29F939DE25C6D9ED00387BD4 /* XCRemoteSwiftPackageReference "NetworkLayer" */;
+			productName = NetworkLayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 290FAC8425B70B020022B7BB /* Project object */;
 }

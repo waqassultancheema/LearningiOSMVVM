@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NetworkLayer",
+        "repositoryURL": "https://github.com/waqassultancheema/NetworkLayer",
+        "state": {
+          "branch": "feature",
+          "revision": "87e1ddb29f260637c081859297c465779590183c",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
